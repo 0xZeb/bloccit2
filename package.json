@@ -1,0 +1,19 @@
+{
+  "name": "bloccit2",
+  "version": "1.0.0",
+  "description": "A reddit-like application for users to discuss and share content",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "export NODE_ENV=test && jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xZeb/bloccit2.git"
+  },
+  "author": "0xZeb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xZeb/bloccit2/issues"
+  },
+  "homepage": "https://github.com/0xZeb/bloccit2#readme"
+}
