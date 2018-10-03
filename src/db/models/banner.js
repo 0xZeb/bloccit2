@@ -1,4 +1,4 @@
-it'use strict';
+'use strict';
 module.exports = (sequelize, DataTypes) => {
   var Banner = sequelize.define('Banner', {
     source: DataTypes.STRING,
