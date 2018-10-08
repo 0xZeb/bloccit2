@@ -5,5 +5,8 @@ module.exports = {
 
     const topicRoutes = require("../routes/topics");
     app.use(topicRoutes);
+
+    const advertRoutes = require("../routes/advert");
+    app.use(advertRoutes);
   }
 }
