@@ -6,7 +6,7 @@ module.exports = {
     topicQueries.getAllTopics((err, topics) => {
 
       if(err){
-        res.redirect(500, "static/index")
+        res.redirect(500, "/")
       } else {
         res.render("topics/index", {topics});
       }
@@ -75,7 +75,7 @@ module.exports = {
     topicQueries.updateTopic(req.params.id, req.body,  (err, topic) => {
 
       if(err || topic == null){
-        res.redirect(400, `/topics/${req.params.id}/edit`);
+        res.redirect(404, `/topics/${req.params.id}/edit`);
       } else {
         res.redirect(`/topics/${topic.id}`);
       }
