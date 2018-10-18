@@ -139,7 +139,7 @@ describe ("routes : ads", () => {
 
 
           it("should update the topic with the given values", (done) => {
-            
+
             const options = {
               url: `${base}/${this.ad.id}/update`,
               form: {
