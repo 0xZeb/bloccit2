@@ -82,8 +82,8 @@ describe("Topic", () => {
         it("should confirm that the associated post is returned when that method is called", (done) => {
           this.topic.getPosts()
           .then((posts) => {
-            expect(posts[0].title).toContain("Heavy metal never disappoints.");
-            expect(posts[0].body).toContain("It rocked my socks.");
+            expect(posts[0].title).toBe("Heavy metal never disappoints.");
+            expect(posts[0].body).toBe("It rocked my socks.");
 
             done();
           })
