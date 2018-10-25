@@ -8,5 +8,8 @@ module.exports = {
 
     const adsRoutes = require("../routes/ads");
     app.use(adsRoutes);
+
+    const postRoutes = require("../routes/posts");
+    app.use(postRoutes);
   }
 }
