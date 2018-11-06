@@ -13,8 +13,6 @@ describe("routes : posts", () => {
         this.post;
 
 
-
-
         sequelize.sync({force: true }).then((res) => {
 
           Topic.create({
