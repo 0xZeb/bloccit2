@@ -12,7 +12,9 @@ module.exports = {
       body: req.body.body,
       topicId: req.params.topicId
     };
+    
     postQueries.addPost(newPost, (err, post) => {
+
       if(err){
         res.redirect(500, "/posts/new");
       } else {

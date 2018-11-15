@@ -159,7 +159,7 @@ describe("routes: flairs", () => {
       const options = {
         url: `${base}/${this.topic.id}/update`,
         form: {
-          name: "new flair",        
+          name: "new flair",
         }
       };
 
