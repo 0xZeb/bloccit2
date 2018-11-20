@@ -14,5 +14,8 @@ module.exports = {
 
     const flairRoutes = require("../routes/flairs");
     app.use(flairRoutes);
+
+    const userRoutes = require("../routes/users");
+    app.use(userRoutes);
   }
 }
