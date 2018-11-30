@@ -18,8 +18,13 @@
           </li>
 
         <% }) %>
+
       </ul>
-      <a href="/topics/new" class="btn btn-primary">Create Topic</a>
+
+      <% if(currentuser && currentUser.isAdmin()) { %>
+        <a href="/topics/new" class="btn btn-success">New Topic</a>
+      <% } %>
+
     </main>
   </body>
 </html>
