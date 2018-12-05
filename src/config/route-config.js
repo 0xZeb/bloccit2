@@ -1,21 +1,10 @@
 module.exports = {
   init(app){
+
     const staticRoutes = require("../routes/static");
-    app.use(staticRoutes);
+    const postRoutes = require("../routes/posts");
 
     const topicRoutes = require("../routes/topics");
-    app.use(topicRoutes);
-
-    const adsRoutes = require("../routes/ads");
-    app.use(adsRoutes);
-
-    const postRoutes = require("../routes/posts");
-    app.use(postRoutes);
-
-
-    const flairRoutes = require("../routes/flairs");
-    app.use(flairRoutes);
-
     const userRoutes = require("../routes/users");
 
     if(process.env.NODE_ENV === "test"){
@@ -23,6 +12,10 @@ module.exports = {
       mockAuth.fakeIt(app);
     }
 
+
+    app.use(staticRoutes);
+    app.use(postRoutes);
+    app.use(topicRoutes);
     app.use(userRoutes);
   }
 }

@@ -21,9 +21,13 @@
 
       </ul>
 
-      <% if(currentuser && currentUser.isAdmin()) { %>
+      <p> <%= currentUser %> </p>
+
+      <% if(currentUser && currentUser.isAdmin()) { %>
         <a href="/topics/new" class="btn btn-success">New Topic</a>
+
       <% } %>
+
 
     </main>
   </body>
