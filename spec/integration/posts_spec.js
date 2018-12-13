@@ -59,6 +59,8 @@ describe("routes : posts", () => {
 
     });
 
+
+
     describe("POST /topics/:topicId/posts/create", () => {
 
         it("should create a new post and redirect", (done) => {
@@ -129,7 +131,7 @@ describe("routes : posts", () => {
 
     describe("GET /topics/:topicId/posts/:id", () => {
 
-      it("should render a view with the selected post", (done) => {
+      it("should render a view (show) with the selected post", (done) => {
         request.get(`${base}/${this.topic.id}/posts/${this.topic.id}`, (err, res, body) => {
           expect(err).toBeNull();
           expect(body).toContain("Snowball Fighting");

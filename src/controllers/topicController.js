@@ -16,8 +16,9 @@ module.exports = {
 
 
   new(req, res, next){
+    //authentication returns boolean after check
     const authorized = new Authorizer(req.user).new();
-    
+
     if(authorized){
       res.render("topics/new");
     } else {
@@ -46,7 +47,6 @@ module.exports = {
          }
        });
      } else {
-
  // #3
        req.flash("notice", "You are not authorized to do that.");
        res.redirect("/topics");
